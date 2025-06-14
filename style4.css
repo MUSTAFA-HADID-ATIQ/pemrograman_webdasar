@@ -1,0 +1,71 @@
+.navbar {
+    background: #95ddff;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 25px;
+}
+
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.buku-best-seller,
+.majalah-best-seller {
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #93e8ff;
+    border-radius: 12px;
+    max-width: 1100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.buku-best-seller h2,
+.majalah-best-seller h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.buku,
+.majalah {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bukuku,
+.majalahku {
+    background-color: #d3f6ff;
+    border: 1px solid #c5d5da;
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 140px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bukuku:hover,
+.majalahku:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+

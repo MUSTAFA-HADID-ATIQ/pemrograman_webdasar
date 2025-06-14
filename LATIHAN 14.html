@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML dengan Div</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+        }
+        .menu {
+            background-color: #e7e7e7;
+            padding: 20px;
+            width: 25%;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <h2>Menu</h2>
+            </div>
+            <div class="content">
+                <h2>Content</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

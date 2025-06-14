@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katalog Buku</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      background-color: #036be0;
+    }
+
+    /* ====== NAVBAR ====== */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(26, 33, 133);
+      padding: 10px 30px;
+    }
+
+    .navbar img {
+      height: 170px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgb(4, 26, 75);
+      background-color: rgb(147, 211, 236);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgb(100, 180, 220);
+    }
+
+    /* ====== JUDUL ====== */
+    .judul {
+      text-align: center;
+      padding: 40px 10px 10px;
+    }
+
+    .judul h1 {
+      font-size: 32px;
+      color: #caf705;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #009688;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* ====== KATALOG BUKU ====== */
+    .buku-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .buku {
+      background-color: rgb(252, 193, 0);
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .buku:hover {
+      transform: translateY(-5px);
+    }
+
+    .buku img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .info h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    .info p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #009688;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <img src="https://i.imgur.com/bme6D1z.png" alt="Logo" />
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">BUKU</a>
+      <a href="#">KORAN</a>
+      <a href="#">MAJALAH</a>
+    </div>
+  </div>
+
+  <!-- JUDUL -->
+  <div class="judul">
+    <h1>BUKU-BUKU BEST SELLER</h1>
+  </div>
+
+  <!-- KATALOG BUKU -->
+  <div class="buku-container">
+    <div class="buku">
+      <img src="https://i.imgur.com/dmGRHI8.jpeg" alt="one piece">
+      <div class="info">
+        <b>One piece vol 100</b>
+        <h3>iniciro oda</h3>
+        <p>Rp 100.000,00</p>
+      </div>
+    </div>
+
+    <div class="buku">
+      <img src="https://i.imgur.com/DIqUoAY.jpeg" alt="one piece">
+      <div class="info">
+        <b>One piece vol  107</b>
+        <h3>iniciro oda</h3>
+        <p>Rp 129.000,00</p>
+      </div>
+    </div>
+
+    <div class="buku">
+      <img src="https://i.imgur.com/y7uWqXv.jpeg" alt="one piece">
+      <div class="info">
+        <b>one piece vol 96</b>
+        <h3>iniciro oda</h3>
+        <p>Rp 185.000,00</p>
+      </div>
+    </div>
+
+    <div class="buku">
+      <img src="https://i.imgur.com/uUOBuu4.jpeg" alt="one piece">
+      <div class="info">
+        <b>One piece vol 86</b>
+        <h3>iniciro oda</h3>
+        <p>Rp 289.000,00</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
